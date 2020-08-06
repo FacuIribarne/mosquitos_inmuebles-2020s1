@@ -1,0 +1,59 @@
+*
+Los mosquitos creados tienen solo dos atributos de su clase madre: Son 
+Aguante y CantidadDePicados.
+
+El MosquitoPesado():
+Le agrega el atributo Peso.
+
+El Mosquito GLoton():
+Es una subclase del MosquitoPesado()
+
+MosquitoConVeneno():
+Le agrega el atributo Veneno.
+
+MosquitoConVenenoMortal():
+Es una subclase del MosquitoConVeneno() y agrega la mortalidad.
+
+*
+Todos cambian sus atributos.
+
+*
+MosquitoConVenenoMortal  afecta disminuyendo su mortalidad.
+
+MosquitoConVeneno afecta disminuyendo su veneno.
+
+El Mosquito GLoton afecta disminuyendo su peso.
+
+El MosquitoPesado afecta disminuyendo su peso.
+
+*
+
+El metodo quierePicar esta ligado al aguante y con esto a la mortalidad. Si el aguante tiene que ser mayor a 500, y su mortalidad mayor a 4, daria falso por lo tanto no picaria, Ya que una de las condiciones no se cumple.
+
+*
+
+Si el metodo planteado sobreescribia completamente al anterior caso, por usar el override, entonces la respuesta si el veneno es mayor a 5 y lo que sobreescribimos fue un 5 , entonces la respuesta seria true ya que el veneno sera mayor a 5.
+
+*
+
+Descansar es entendido por MosquitoConVeneno, MosquitoConVenenoMortal y MosquitoAguantador.
+
+quierePicar es entendido por todos ya que es la super clase principal de todos.
+
+peso es entendido por MosquitoPesado y MosquitoGloton.
+
+picadorFrecuente todos lo entienden ya que es la superclase princial es la que lo posee.
+
+esMortal lo entienden MosquitoAguantador y MosquitoConVenenoMortal.
+
+*
+
+Mosquito1 : es verdadero por que el metodo quiere picar esta ligado al aguante(3000) y necesita que sea mayor a 500.
+
+Mosquito2 : es falso por que cumple el aguante pero su peso no es superior a 100 es de 40 nomas.
+
+Mosquito3 : es falso por que no cumple con el aguante para poder picar.
+
+Mosquito4 :es verdadero por que cumple con lo requerido para poder picar.
+
+Mosquito 5 : es verdadero, por que cumple con ambas condiciones, la de mortalidad que es de 50 y la del aguante por tener 2300(mas 500 puntos mas por ser mosquitoAguantador.
